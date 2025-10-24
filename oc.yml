@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: contenedor-principal
-          image: jesusnicolassierra/mi-app-flask # Imagen de Flask desde Docker Hub
+          image: jesusnicolassierra/mi-app-flask:build-{{ tag }} # Imagen de Flask desde Docker Hub
           ports:
             - containerPort: 3000
           resources:
