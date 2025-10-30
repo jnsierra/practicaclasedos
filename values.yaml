@@ -1,4 +1,4 @@
-name: microservicio-1
+name: microservicio-2
 
 # Kubernetes namespace to install into (can be overridden)
 namespace: nicolas-sierra-dev
