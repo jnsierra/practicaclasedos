@@ -63,5 +63,5 @@ jobs:
           cat values.yaml
       - name: Deploy files
         run: |
-          helm show chart oci://registry-1.docker.io/jesusnicolassierra/mi-chart --version 3
+          helm show chart oci://registry-1.docker.io/jesusnicolassierra/mi-chart --version 4
           helm upgrade --install microservicio-1 oci://registry-1.docker.io/jesusnicolassierra/mi-chart --version 4 --values values.yaml
