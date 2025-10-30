@@ -7,8 +7,8 @@ replicaCount: 1
 
 container:
   # Full image name without tag (e.g. 'adonispaz9506/hola-mundo-clase567')
-  image: "jesusnicolassierra/hola-mundo-clase123"
-  tag: "{{ tag }}"
+  image: "jesusnicolassierra/mi-app-flask"
+  tag: "build-{{ tag }}"
   port: 3000
 
 service:

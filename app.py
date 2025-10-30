@@ -5,7 +5,7 @@ import urllib.error
 app = Flask(__name__)
 
 # Configuración del servicio al que deseas llamar
-URL_SERVICIO_EXTERNO = "http://mi-servicio.nicolas-sierra-dev.svc.cluster.local:4000"
+URL_SERVICIO_EXTERNO = "http://mi-servicio-microservicio-1.nicolas-sierra-dev.svc.cluster.local:4000"
 
 @app.route('/', methods=['GET'])
 def hello_world():
