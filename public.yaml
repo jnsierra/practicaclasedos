@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-ingress-to-mi-servicio-microservicio-2
+  namespace: nicolas-sierra-dev
+spec:
+  podSelector:
+    matchLabels:
+      app: mi-servicio-microservicio-2 # Aplica esta política a los pods etiquetados como micro-b
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+      ports:
+        - protocol: TCP
+          port: 3000
